@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filmzoeker</title>
+    <script defer type="text/javascript" src="moviesBase.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <link rel = "stylesheet" href = "mystyles.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Welkom bij de Filmzoeker</h1>
+    <nav id = "filter">
+        <input type="radio" id="new-movie" name="movies" value="Niewste Films">
+        <label for="new-movie">Nieuwste Films, vanaf 2014</label>
+        <input type="radio" id="avengers" name="movies" value="Avengers">
+        <label for="avengers">Avengers Films</label>
+        <input type="radio" id="x-men" name="movies" value="X-Men Films">
+        <label for="x-men">X-Men Films</label>
+        <input type="radio" id="princess" name="movies" value="Princess Films">
+        <label for="princess">Princess Films</label>
+        <input type="radio" id="batman" name="movies" value="Batman Films">
+        <label for="batman">Batman Films</label>
+        <div class="search-container">
+          <input type="text" name="search" placeholder="Search..." id="search-input">
+          <a href="#" class="search-btn">
+                  <i class="fas fa-search"></i>      
+          </a>
+        </div>
+      </nav>
+    <div class = "gallery">
+      <ul id = "list-of-movies">
+      </ul>
+    </div>
+  </body>
+</html>
