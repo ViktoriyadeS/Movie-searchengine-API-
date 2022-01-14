@@ -73,12 +73,10 @@ nav.addEventListener("click", filter);
 const searchBar = document.getElementById("search-input");
 searchBar.addEventListener("keyup", function(e){
         const searchWord = e.target.value.toLowerCase();
-        console.log(searchWord);
         const matched = movies.filter((movie) =>{
             clearList();
             return movie.Title.toLowerCase().includes(searchWord)
         })
-        console.log(matched);
         matched.forEach((movie) => createList(movie))  
 })
 
